@@ -12,7 +12,7 @@ def anagram(word, myList):
     word = word.lower()
     anagrams = []
     for words in myList:
-    	if word != words.lower():
+        if word.lower() != words.lower():
     		if Counter(word) == Counter(words.lower()):
     			anagrams.append(words)
     return anagrams

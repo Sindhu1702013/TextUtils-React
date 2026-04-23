@@ -7,13 +7,11 @@ from collections import Counter
 def pangram(sentence):
 	sentence = sentence.lower()
 	check = 'abcdefghijklmnopqrstuvwxyz'
-	alphabets = []
+	alphabets = set()
 	for letter in sentence:
 		if letter.isalpha():
-			if letter in alphabets:
-				pass
-			else:
-				alphabets.append(letter)
+			alphabets.add(letter)
+
 
 	alphabets = ''.join(alphabets)
 	if Counter(check) == Counter(alphabets):
