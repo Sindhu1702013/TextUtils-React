@@ -4,7 +4,7 @@
 import json
 
 # For storing on json format
-def storeJSON(fileName, data = {}):
+def storeJSON(fileName, data=None):
     with open(fileName, 'w')  as fd:
         json.dump(data, fd, indent = 4, separators = (',', ': '))
 
