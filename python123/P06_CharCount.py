@@ -6,7 +6,7 @@ def charFrequency(userInput):
     userInput = userInput.lower() #covert to lowercase
     dict = {}
     for char in userInput:
-     if char in dict:
+        keys = dict.keys()
         if char in keys:
             dict[char] += 1
         else:

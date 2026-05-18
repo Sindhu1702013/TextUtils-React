@@ -6,7 +6,7 @@ class Vehicle():
     #Class Methods/ Attributes
 
     #Here self is passed as an argument because instance is passed as first argument
-    def type(self):     #Without self it throws an error
+    def get_vehicle_type(self):
         print(self)
         print('I have a type')
 
